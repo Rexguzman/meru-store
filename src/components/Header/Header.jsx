@@ -4,8 +4,8 @@ import AppContext from '../../context/AppContext';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const { state } = useContext(AppContext)
-  const {cart} = state;
+  const { state } = useContext(AppContext);
+  const { cart } = state;
 
   return (
     <StyledHeader>

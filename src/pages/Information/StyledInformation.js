@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledInformation = styled.section`
-
   h2 {
     margin: 20px 0;
   }
@@ -63,7 +62,8 @@ export const StyledInformation = styled.section`
   .information-sidebar h3 {
     margin: 15px 0;
   }
-  .information-item h4, .information-item span {
+  .information-item h4,
+  .information-item span {
     font-size: 1.4rem;
     margin: 15px 0;
   }
@@ -78,7 +78,7 @@ export const StyledInformation = styled.section`
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url('https://i.imgur.com/G7DqhzG.jpg');
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
   .form-sidebar-containe {
     display: flex;
@@ -86,29 +86,29 @@ export const StyledInformation = styled.section`
     flex-flow: wrap;
     max-width: 1110px;
     margin: auto;
-}
-.information-content {
-  width: 100%;
-  align-self: center;
-}
-@media (min-width: 768px) {
-	.information-content {
-  width: 50%;
   }
-  .information-sidebar {
-    width: 45%;
+  .information-content {
+    width: 100%;
+    align-self: center;
   }
+  @media (min-width: 768px) {
+    .information-content {
+      width: 50%;
+    }
+    .information-sidebar {
+      width: 45%;
+    }
 
-  .information-buttons {
-    flex-flow: nowrap;
+    .information-buttons {
+      flex-flow: nowrap;
+    }
+    .information-buttons a {
+      width: 50%;
+      margin-right: 15px;
+    }
+    .information-buttons > button {
+      width: 50%;
+      margin-left: 15px;
+    }
   }
-  .information-buttons a {
-    width: 50%;
-    margin-right: 15px;
-  }
-  .information-buttons > button {
-    width: 50%;
-    margin-left: 15px;
-  }
-}
 `;

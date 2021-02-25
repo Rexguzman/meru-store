@@ -3,36 +3,38 @@ import initialState from '../initialState';
 
 const useInitialState = () => {
   const [state, setState] = useState(initialState);
-  const [itemCartId, setItemCartId] = useState(0)
-  
+  const [itemCartId, setItemCartId] = useState(0);
+
   const addToCart = (payload) => {
     setState({
       ...state,
-      cart: [...state.cart, {...payload, itemCartId}],
+      cart: [...state.cart, { ...payload, itemCartId }],
     });
-    setItemCartId(itemCartId + 1)
+    setItemCartId(itemCartId + 1);
   };
 
   const removeFromCart = (payload) => {
     setState({
       ...state,
-      cart: state.cart.filter((items) => items.itemCartId !== payload.itemCartId),
+      cart: state.cart.filter(
+        (items) => items.itemCartId !== payload.itemCartId
+      ),
     });
   };
 
-  const addToBuyer = payload => {
+  const addToBuyer = (payload) => {
     setState({
       ...state,
-      buyer: [...state.buyer, payload]
-    })
-  }
+      buyer: [...state.buyer, payload],
+    });
+  };
 
-  const addNewOrder = payload => {
+  const addNewOrder = (payload) => {
     setState({
       ...state,
-      orders: [...state.orders, payload]
-    })
-  }
+      orders: [...state.orders, payload],
+    });
+  };
 
   return {
     addToCart,

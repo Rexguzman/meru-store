@@ -16,13 +16,13 @@ export const StyledCheckout = styled.section`
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url('https://i.imgur.com/X5SOnlN.jpg');
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
   .products-sidebar-container {
     display: flex;
     flex-wrap: wrap;
     max-width: 1110px;
-    width:100%;
+    width: 100%;
     min-height: 22vh;
     align-items: center;
   }
@@ -66,14 +66,14 @@ export const StyledSideBar = styled.div`
     outline: none;
   }
   @media (min-width: 768px) {
-	max-width: 25%;
-  align-self: flex-end;
+    max-width: 25%;
+    align-self: flex-end;
   }
 `;
 
 export const StyledCheckoutContent = styled.div`
   margin: 0 15px;
-  width:100%;
+  width: 100%;
 
   h2 {
     text-align: center;
@@ -117,6 +117,6 @@ export const StyledCheckoutContent = styled.div`
     cursor: pointer;
   }
   @media (min-width: 768px) {
-	max-width: 65%;
+    max-width: 65%;
   }
 `;

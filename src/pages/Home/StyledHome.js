@@ -16,6 +16,6 @@ export const StyledHome = styled.section`
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url('https://i.imgur.com/kcgYT3U.jpg');
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 `;

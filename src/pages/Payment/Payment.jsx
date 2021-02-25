@@ -8,7 +8,7 @@ const Payment = () => {
   const { state, addNewOrder } = useContext(AppContext);
   const { cart, buyer } = state;
   const history = useHistory();
-console.log(buyer)
+  console.log(buyer);
   const paypalOptions = {
     clientId:
       'AZPPWElXmMiwsJIgkw13nAL6MDsz38qPWR7enQLuOBNPBDn35z7Yxicx1kw5kLdRAmuxA-mhKaNEvhhM',
@@ -42,17 +42,16 @@ console.log(buyer)
 
   return (
     <StyledPayment>
-        <h3 className="hero-img">Resumen de tu pedido:</h3>
-        <div className="payment-container">
-
-      <div className="payment-content">
-        {cart.map((item) => (
-          <div className="information-item" key={item.itemCardId}>
-            <h4>{item.title}</h4>
-            <span>${item.price}</span>
-          </div>
-        ))}
-      </div>
+      <h3 className="hero-img">Resumen de tu pedido:</h3>
+      <div className="payment-container">
+        <div className="payment-content">
+          {cart.map((item) => (
+            <div className="information-item" key={item.itemCardId}>
+              <h4>{item.title}</h4>
+              <span>${item.price}</span>
+            </div>
+          ))}
+        </div>
         <div className="payment-buttons">
           <PayPalButton
             paypalOptions={paypalOptions}
@@ -64,7 +63,7 @@ console.log(buyer)
             onPaymentCancel={(data) => console.log(data)}
           />
         </div>
-            </div>
+      </div>
     </StyledPayment>
   );
 };

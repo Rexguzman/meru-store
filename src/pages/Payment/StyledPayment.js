@@ -42,7 +42,7 @@ export const StyledPayment = styled.section`
       flex-flow: nowrap;
     }
     .payment-buttons {
-    width: 100%;
-  }
+      width: 100%;
+    }
   }
 `;

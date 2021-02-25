@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledProduct} from './StyledProduct';
+import { StyledProduct } from './StyledProduct';
 
 const Product = ({ product, handleAddToCart }) => {
   return (
@@ -14,7 +14,9 @@ const Product = ({ product, handleAddToCart }) => {
         </h2>
         <p>{product.description}</p>
       </div>
-      <button type="button" onClick={handleAddToCart(product)}>Comprar</button>
+      <button type="button" onClick={handleAddToCart(product)}>
+        Comprar
+      </button>
     </StyledProduct>
   );
 };

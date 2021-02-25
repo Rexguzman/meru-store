@@ -33,6 +33,6 @@ export const StyledProduct = styled.div`
   }
 
   @media (min-width: 768px) {
-	max-width: 320px;
+    max-width: 320px;
   }
 `;
