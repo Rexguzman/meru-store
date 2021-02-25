@@ -1,10 +1,15 @@
 import React from 'react';
-import StyledHomeContainer from './Home.styled';
+import { StyledHome } from './StyledHome';
+import initialState from '../../initialState';
+
+import {Products} from '../../components';
 
 const Home = () => (
-  <StyledHomeContainer>
-    <p>Hola</p>
-  </StyledHomeContainer>
+  <StyledHome>   
+    <figure className="hero-img">
+    </figure>
+    <Products products={initialState.products}/>
+  </StyledHome>
 );
 
 export default Home;
